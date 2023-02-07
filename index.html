@@ -8,8 +8,26 @@
 
 <body>
     <header>
-        <ins>Lorem Ipsum</ins>
+        <ins>Page is under construction right now.</ins>
+
+        <button onclick="buttonClicked()">Click me :)</button>
     </header>
 </body>
 
-<script src="script.js"></script>
+<script>
+function buttonClicked() {
+    // only adding a few colors, suchuhluyumurtah, you can add more colors if you want
+    var colorArray = [
+        'White',
+        'Black',
+        'Red',
+        'Green',
+        'Yellow'
+    ];
+
+    if (typeof window !== 'undefined')
+        window.alert("Hello World!");
+    if (typeof document !== 'undefined')
+        document.body.style.backgroundColor = colorArray[Math.floor(Math.random() * colorArray.length)];
+}
+</script>
