@@ -20,6 +20,7 @@
         <ins>Page is under construction right now.</ins>
 
         <button onclick="buttonClicked()">Click me :)</button>
+        <button onclick="removeBackground()">Remove background</button>
     </header>
 </body>
 
@@ -42,5 +43,23 @@ function buttonClicked() {
         window.alert("Thanks For Clicking Me!!! :)");
     if (typeof document !== 'undefined')
         document.body.style.backgroundColor = colorArray[Math.floor(Math.random() * colorArray.length)];
+}
+
+function removeBackground(){
+    if (typeof document !== 'undefined' && document.body.style.backgroundImage !== null)
+        document.body.style.backgroundImage === null;
+    else if (document.body.style.backgroundImage === null)
+        return;
+
+    if (typeof window !== 'undefined')
+        window.alert("Background Image Removed");
+}
+
+// was gonna use for removeBackground but nevermind
+function checkEmpty(e){
+    if (e == null || e == undefined || e.length == 0){
+        return true;
+    }
+    return false;
 }
 </script>
