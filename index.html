@@ -54,9 +54,9 @@ function buttonClicked() {
 }
 
 function removeBackground(){
-    if (typeof document !== 'undefined' && document.body.style.backgroundImage !== null)
-        document.body.style.backgroundImage === null;
-    else if (document.body.style.backgroundImage === null)
+    if (typeof document !== 'undefined' && document.body.style.backgroundImage !== "none")
+        document.body.style.backgroundImage === "none";
+    else if (document.body.style.backgroundImage === "none")
         return;
 
     if (typeof window !== 'undefined')
